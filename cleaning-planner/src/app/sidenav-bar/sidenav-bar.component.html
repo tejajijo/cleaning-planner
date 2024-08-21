@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <div class="sidenav-container">
+            <!-- Mat side container -->
+            <mat-sidenav-container class="example-container">
+      
+                <mat-sidenav class="example-sidenav" #sidenav mode="side" [(opened)]="isSidenavOpen">
+                    <mat-nav-list>
+                        <div class="navigation-button-list">
+                            <button mat-button >Add New Housemate</button> 
+                            <button mat-button >Add Cleaning Duty</button>
+                            <button mat-button >Add Task</button>
+                        </div>
+                    </mat-nav-list>
+                  <!-- <button mat-button (click)="sidenav.close()">Close</button> -->
+                </mat-sidenav>
+      
+                <mat-sidenav-content class="example-sidenav-content">
+                    <p>
+                        <button class="toggle-button" mat-button (click)="sidenav.toggle()" mat-raised-button>
+      
+                        <!-- Adding icon to toggle menu -->
+                            <mat-icon>{{ isSidenavOpen ? 'close':'menu'}}</mat-icon>  
+                        </button>
+                    </p>
+
+
+                    <!-- Dashboard Content -->
+                    <app-dashboard></app-dashboard>
+                
+                </mat-sidenav-content>
+            </mat-sidenav-container>
+        </div>
+    </body>
+</html>

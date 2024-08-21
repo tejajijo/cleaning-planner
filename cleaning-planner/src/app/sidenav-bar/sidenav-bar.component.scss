@@ -1,0 +1,44 @@
+.example-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: right;
+    justify-content: first baseline;
+}
+
+.example-sidenav {
+    padding: 20px;
+}
+
+.toggle-button{
+    border: none;
+    background: none;
+
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+mat-nav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-button-list{
+
+    width: 100%;
+
+}

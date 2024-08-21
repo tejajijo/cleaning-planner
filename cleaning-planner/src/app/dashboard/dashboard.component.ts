@@ -14,12 +14,5 @@ import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout'
 
 export class DashboardComponent {
 
-  isHandset: boolean = false;
-
-  constructor(private breakpointObserver: BreakpointObserver) {
-    this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
-      this.isHandset = result.matches;
-    });
-  }
   
 }
